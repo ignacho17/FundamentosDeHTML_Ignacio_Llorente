@@ -58,8 +58,8 @@
   </article>
   <form class="" action="index.html" method="post">
     <h3>Agregar estudios</h3>
-    <label>Año</label>
-    <select class="number" name="Año">
+    <label title="Selecciona el año correcto" for="Año">Año:</label>
+     <select class="number" name="Año" required>
       <option>1995</option>
       <option>1996</option>
       <option>1997</option>
@@ -84,8 +84,16 @@
       <option>2017</option>
       <option>2018</option>
       <option>2019</option>
-
-    </select>
+    </select><br><br>
+    <label title="Introduce la institución" for="Institución">Institución:
+      <input type="text" required>
+    </label><br><br>
+    <label title="Escribe el lugar" for="Lugar">Lugar:
+      <textarea rows="3" required></textarea>
+    </label><br><br>
+    <label title="Envia el formulario">
+      <input type="submit" value="Enviar">
+    </label>
 
   </form>
  </section>
